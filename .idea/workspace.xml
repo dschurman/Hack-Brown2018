@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ca7032e-3911-40e2-9db7-14bf62755216" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/first_project.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/flask_sample.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/static/styles/main.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/templates/index.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/flask_sample.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/main.css" afterPath="$PROJECT_DIR$/webapp/static/javascript/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/main.js" afterPath="$PROJECT_DIR$/templates/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/templates/index.html" afterPath="$PROJECT_DIR$/webapp/templates/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,20 +18,8 @@
       <file leaf-file-name="test.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="14" column="36" lean-forward="false" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
-              <folding>
-                <element signature="e#0#42#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/PycharmProjects/hack_Test/test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" column="30" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="34" selection-end-column="12" />
+            <state relative-caret-position="300">
+              <caret line="20" column="57" lean-forward="true" selection-start-line="20" selection-start-column="57" selection-end-line="20" selection-end-column="57" />
               <folding>
                 <element signature="e#0#42#0" expanded="true" />
               </folding>
@@ -69,8 +49,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="452" />
-    <option name="y" value="25" />
+    <option name="x" value="314" />
+    <option name="y" value="176" />
     <option name="width" value="1091" />
     <option name="height" value="733" />
   </component>
@@ -260,9 +240,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="452" y="25" width="1091" height="733" extended-state="0" />
+    <frame x="314" y="176" width="1091" height="733" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18606783" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18606783" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -294,16 +275,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/PycharmProjects/hack_Test/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="30" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="34" selection-end-column="12" />
           <folding>
             <element signature="e#0#42#0" expanded="true" />
           </folding>
@@ -342,10 +313,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/PycharmProjects/hack_Test/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="18" lean-forward="true" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="14" column="36" lean-forward="false" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+        <state relative-caret-position="300">
+          <caret line="20" column="57" lean-forward="true" selection-start-line="20" selection-start-column="57" selection-end-line="20" selection-end-column="57" />
           <folding>
             <element signature="e#0#42#0" expanded="true" />
           </folding>
