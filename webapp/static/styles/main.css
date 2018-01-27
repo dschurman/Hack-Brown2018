@@ -1,7 +1,44 @@
 p {
-  color: red;
+	text-align: center;
+  	color: black;
+}
+
+#heading-container {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	width: 60%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#title-text {
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+
+#description {
+	font-size:12px;
 }
 
 body {
-  background-color: red;
+  	background-color: white;
+  	font-family:futura;
+}
+
+
+textarea {
+	display: block;
+    margin: 0 auto;
+	width: 60%;
+	height: 40vh;
+	border-radius: 5px;
+	border-color: #dbdbdb;
+	padding: 10px;
+}
+
+button {
+	display: block;
+    margin: 0 auto;
+    margin-top:20px;
 }

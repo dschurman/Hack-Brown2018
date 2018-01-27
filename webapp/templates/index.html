@@ -9,8 +9,17 @@
 	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/main.css') }}">
 </head>
 <body>
-	<p>Welcome!</p>
-	<input type="text">
+	<div id="heading-container">
+
+		<div id="title-text">Welcome!</div>
+
+		<div id="description"> Here is a description of our product. Here is a description of our product. Here is a description of our product. Here is a description of our product. Here is a description of our product. Here is a description of our product.  </div>
+
+	</div>
+
+	<textarea id="textbox" placeholder="Paste text here"></textarea>
+
+	<button type="button">Generate Summary</button>
 
 	<script src="{{url_for('static', filename='javascript/main.js')}}"></script>
 </body>

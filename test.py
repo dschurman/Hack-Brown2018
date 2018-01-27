@@ -25,8 +25,8 @@ And still the fact that every major swath of the globe is expanding is a source 
 def summarize_text(input_string, ratio=0.2, word_count=30):
     summary = "";
     summary = summarize(input_string, word_count = word_count)
-    if len(summary) == 0:
-        summary = summarize(input_string, ratio = ratio)
+    # if len(summary) == 0:
+    #     summary = summarize(input_string, ratio = ratio)
     print(summary)
 
 def get_keywords(input_string, words=5):
