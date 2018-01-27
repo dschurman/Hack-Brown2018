@@ -1,7 +1,48 @@
 p {
+<<<<<<< HEAD
   color: blue;
+=======
+	text-align: center;
+  	color: black;
+}
+
+#heading-container {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	width: 60%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#title-text {
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+
+#description {
+	font-size:12px;
+>>>>>>> a384a3ab63a89a3dbb1fbb6f62cc3d6061f1f717
 }
 
 body {
-  background-color: red;
+  	background-color: white;
+  	font-family:futura;
+}
+
+
+textarea {
+	display: block;
+    margin: 0 auto;
+	width: 60%;
+	height: 40vh;
+	border-radius: 5px;
+	border-color: #dbdbdb;
+	padding: 10px;
+}
+
+button {
+	display: block;
+    margin: 0 auto;
+    margin-top:20px;
 }
