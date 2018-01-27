@@ -13,7 +13,6 @@ def index():
 @app.route('/_add_numbers')
 def worker():
     a = request.args.get('a')
-    b = request.args.get('b', 0, type=int)
     return jsonify(result=a)
 
 if __name__ == '__main__':
