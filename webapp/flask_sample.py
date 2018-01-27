@@ -1,9 +1,20 @@
-from flask import Flask, render_template
+#!flask/bin/python
+
+import sys
+
+from flask import Flask, render_template, jsonify, request, redirect, Response
+import random, json
 app = Flask(__name__)
 
 @app.route('/')
 def index():
     return render_template('index.html')
 
+@app.route('/_add_numbers')
+def worker():
+    a = request.args.get('a')
+    b = request.args.get('b', 0, type=int)
+    return jsonify(result=a)
+
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
