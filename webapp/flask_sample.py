@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-from flask import Flask, render_template
-=======
 #!flask/bin/python
 
 #import sys
@@ -24,7 +21,9 @@ def worker():
 
 @app.route('/pdf')
 def pdf():
+    import re
     p = request.args.get('p')
+    p = re.sub(r'^.*\\', '', p);
     try:
         text = parse_my_pdf(p)
         summ = summarize_text(text)
