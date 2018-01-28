@@ -20,16 +20,14 @@
 
 	<textarea id="textbox" placeholder="Paste text here"></textarea>
 
-	<button type="button" id="calculate">>Generate Summary</button>
-
+	<button type="button" id="calculate">Generate Summary</button>
+	<form>
+		<br>Or, enter a PDF filepath (no upload b/c I'm bad):<br>
+  	<input type="text" name="filepath" id="filepathbox"><br>
+	  <input type="submit" value="Submit" id="pdf">
+	</form>
 	<script src="{{url_for('static', filename='javascript/main.js')}}"></script>
-	<span id="result">?</span>
-	<!--
-	<p>
-	  <input type="text" size="5" name="a"> +
-	  <input type="text" size="5" name="b"> =
-	  <span id="result">?</span>
-	<p><a href=# id="calculate">calculate server side</a>
-	-->
+	<span id="result"><br>?</span>
+
 </body>
 </html>

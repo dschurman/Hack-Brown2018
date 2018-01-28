@@ -1,7 +1,4 @@
 p {
-<<<<<<< HEAD
-  color: blue;
-=======
 	text-align: center;
   	color: black;
 }
@@ -22,7 +19,6 @@ p {
 
 #description {
 	font-size:12px;
->>>>>>> a384a3ab63a89a3dbb1fbb6f62cc3d6061f1f717
 }
 
 body {
@@ -30,6 +26,9 @@ body {
   	font-family:futura;
 }
 
+#result {
+  font-size: 16px;
+}
 
 textarea {
 	display: block;
