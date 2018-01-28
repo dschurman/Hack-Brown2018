@@ -28,7 +28,7 @@
 		<div id="tabs-container">
 			<!-- Tab links -->
 			<div class="tab">
-			  <button class="tablinks" onclick="openTab(event, 'plaintext-tab')">Plain Text/Speech2Text</button>
+			  <button class="tablinks" id="default-button" onclick="openTab(event, 'plaintext-tab')">Plain Text/Speech2Text</button>
 			  <button class="tablinks" onclick="openTab(event, 'pdf-tab')">PDF Select</button>
 			</div>
 
@@ -56,7 +56,7 @@
 		<script src="{{url_for('static', filename='javascript/main.js')}}"></script>
 		<div id="results-container">
 			<div id="title-text"> Results: </div>
-			<span id="result"><br>?</span>
+			<span id="result"><br></span>
 		</div>
 	</div>
 
