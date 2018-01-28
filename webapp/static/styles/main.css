@@ -1,24 +1,65 @@
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    width:33%;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+#tabs-container {
+	
+}
+
+
 p {
 	text-align: center;
   	color: black;
 }
 
 #heading-container {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+#content-container {
 	display: block;
 	margin: 0 auto;
 	text-align: center;
 	width: 60%;
-	margin-top: 20px;
-	margin-bottom: 20px;
 }
 
 #settings-container {
-	display: block;
-	margin: 0 auto;
-	text-align: center;
-	width: 60%;
-	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-top: 30px;
+	margin-bottom: 30px;
 	font-size:12px;
 }
 
@@ -31,29 +72,38 @@ p {
 	font-size:12px;
 }
 
+input[type=text] {
+	width:20%;
+	margin-left:5%;
+	margin-right:5%;
+}
+
 body {
   	background-color: white;
   	font-family:futura;
 }
 
+#results-container {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
 #result {
-  font-size: 16px;
+  	font-size: 16px;
 }
 
 textarea {
-	display: block;
-    margin: 0 auto;
-	width: 60%;
-	height: 40vh;
+	width: 90%;
+	height: 30vh;
 	border-radius: 5px;
 	border-color: #dbdbdb;
 	padding: 10px;
+	margin:10px;
 }
 
-button {
-	display: block;
-    margin: 0 auto;
-    margin-top:20px;
+#calculate {
+    margin-top:10px;
+    margin-bottom:10px;
 }
 
 </style>

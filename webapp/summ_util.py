@@ -26,7 +26,7 @@ badline = "aa aaa aaaaaa"
 # remove newline characters?
 
 
-def summarize_text(input_string, word_count, ratio=0.2):
+def summarize_text(input_string, word_count, ratio=0.1):
     try:
         summary = summarize(input_string, word_count=word_count)
         if len(summary) == 0:
