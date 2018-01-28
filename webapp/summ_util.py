@@ -25,17 +25,17 @@ badline = "aa aaa aaaaaa"
 # remove non ascii? or specify encoding to prevent errors
 # remove newline characters?
 
-# change ratio or word_count defaults depending on what works best
-def summarize_text(input_string, ratio=0.2, word_count=30):
+
+def summarize_text(input_string, word_count, ratio=0.2):
     try:
-        summary = summarize(input_string, word_count = word_count)
+        summary = summarize(input_string, word_count=word_count)
         if len(summary) == 0:
             summary = summarize(input_string, ratio = ratio)
     except:
         summary = input_string
     return summary
 
-def get_keywords(input_string, words=5):
+def get_keywords(input_string, words):
     try:
         stopwords_list = nltk.corpus.stopwords.words('english')
         all_words = input_string.split(" ")
@@ -47,8 +47,8 @@ def get_keywords(input_string, words=5):
         keys = ""
     return keys
 
-#
+
 # print("************START************")
-# print(summarize_text(badline))
-# print(get_keywords(badline))
+# print(summarize_text(nytimes_economy, word_count=30))
+# print(get_keywords(nytimes_economy))
 # print("*************END*************")

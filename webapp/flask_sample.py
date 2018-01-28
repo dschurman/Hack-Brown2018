@@ -14,9 +14,11 @@ def index():
 @app.route('/_add_numbers')
 def worker():
     a = request.args.get('a')
+    b = request.args.get('b')
+    c = request.args.get('c')
     #a = parse_my_pdf('geo_pdf.pdf')
-    summ = summarize_text(a)
-    keys = get_keywords(a)
+    summ = summarize_text(a, word_count=int(b))
+    keys = get_keywords(a, words=int(c))
     return jsonify(result=summ + '\n\nKeywords:\n' + keys)
 
 @app.route('/pdf')
@@ -27,8 +29,10 @@ def pdf():
     print(p + "**")
     try:
         text = parse_my_pdf(p)
-        summ = summarize_text(text)
-        keys = get_keywords(text)
+        b = request.args.get('b')
+    	c = request.args.get('c')
+        summ = summarize_text(text, word_count=int(b))
+        keys = get_keywords(text, words=int(c))
         return jsonify(result=summ + '\n\nKeywords:\n' + keys)
     except:
         text = "Invalid filepath boi."
