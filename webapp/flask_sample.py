@@ -30,7 +30,7 @@ def pdf():
     try:
         text = parse_my_pdf(p)
         b = request.args.get('b')
-    	c = request.args.get('c')
+        c = request.args.get('c')
         summ = summarize_text(text, word_count=int(b))
         keys = get_keywords(text, words=int(c))
         return jsonify(result=summ + '\n\nKeywords:\n' + keys)
