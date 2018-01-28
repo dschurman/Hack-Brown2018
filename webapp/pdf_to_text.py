@@ -29,8 +29,8 @@ def parse_my_pdf(filename):
         #print(text)
 
         #The word_tokenize() function will break our text phrases into #individual words
-        text = text.replace('\n', '')
-        return text
+    text = text.replace('\n', '')
+    return text
     # tokens = word_tokenize(text)
     # #we'll create a new list which contains punctuation we wish to clean
     # punctuations = ['(',')',';',':','[',']',',','.']
