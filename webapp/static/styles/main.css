@@ -91,12 +91,31 @@ body {
   text-align: justify;
 }
 
+#results-text {
+  background-color: #d6f3ff;
+  border-radius: 5px;
+  padding: 10px;
+}
+
 #result {
   	font-size: 16px;
 }
 
-b {
-  color: #0070C0;
+.description {
+  color: #4dcbf9;
+}
+
+hr {
+  background-color: #4dcbf9;
+  color: #4dcbf9;
+  border: 0 none;
+  height: 1px;
+}
+
+a {
+  color: #adadad;
+  font-style: italic;
+  text-decoration: underline;
 }
 
 textarea {

@@ -13,9 +13,9 @@
 	<div id="content-container">
 		<div id="heading-container">
 
-			<div id="title-text">Welcome!</div>
-
-			<div id="description"> Welcome to our <b>text summarization</b> tool! We use Gensim and NLTK to implement natural language processing and machine learning in an easy-to-use tool. Specify your preferred summary target length and keyword count (in words), or use our default settings! Paste text directly, use the microphone for speech-to-text, or select a PDF. Note: Keywords are stemmed. </div>
+			<div id="title-text">The Re<span class="description">text</span>ualizationizer</div>
+			<hr><br>
+			<div id="description"> Welcome to our <span class="description">text summarization</span> tool! We use <a href="https://radimrehurek.com/gensim/">Gensim</a> and <a href="http://www.nltk.org/">NLTK</a> to implement natural language processing and machine learning in an easy-to-use tool. Specify your preferred summary target length and keyword count (in words), or use our default settings! Paste text directly, use the microphone for speech-to-text, or select a PDF. Note: Keywords may be stemmed. </div>
 
 		</div>
 
@@ -35,7 +35,7 @@
 
 			<!-- Tab content -->
 			<div id="plaintext-tab" class="tabcontent">
-			  	<textarea id="textbox" placeholder="Paste text here"></textarea>
+			  	<textarea id="textbox" placeholder="Paste or speak"></textarea>
 					<img onclick="startDictation()" src="//i.imgur.com/cHidSVu.gif" />
 				<script src="{{url_for('static', filename='javascript/speechrec.js')}}"></script>
 				<br>
@@ -44,7 +44,7 @@
 
 			<div id="pdf-tab" class="tabcontent">
 				<form>
-					<br>Or, enter a PDF filepath (no upload b/c I'm bad):<br>
+					<br>Or, choose a PDF file to summarize:<br>
 			  		<!--<input type="text" name="filepath" id="filepathbox"><br>-->
 					<input type="file" id="filepathbox"><br>
 				    <input type="submit" value="Submit" id="pdf">
@@ -56,7 +56,9 @@
 		<script src="{{url_for('static', filename='javascript/main.js')}}"></script>
 		<div id="results-container">
 			<div id="title-text"> Results: </div>
-			<span id="result"><br>?</span>
+			<div id="results-text">
+				<span id="result"><br>?</span>
+			</div>
 		</div>
 	</div>
 
