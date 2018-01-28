@@ -12,6 +12,16 @@ p {
 	margin-bottom: 20px;
 }
 
+#settings-container {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	width: 60%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size:12px;
+}
+
 #title-text {
 	font-size: 30px;
 	margin-bottom: 20px;

@@ -4,15 +4,18 @@ $(function() {
   var submit_form = function(e) {
     $.getJSON('/_add_numbers', {
       a: $('#textbox').val(),
+      b: $('#summary-limit').val(),
+      c: $('#keyword-count').val(),
     }, function(data) {
       $('#result').html(data.result);
-      //$('input[name=a]').focus().select();
     });
     return false;
   };
   var submit_pdf = function(e) {
     $.getJSON('/pdf', {
       p: $('#filepathbox').val(),
+      b: $('#summary-limit').val(),
+      c: $('#keyword-count').val(),
     }, function(data) {
       $('#result').html(data.result);
     });
@@ -20,5 +23,4 @@ $(function() {
   }
   $('#calculate').bind('click', submit_form);
   $('#pdf').bind('click', submit_pdf);
-  //$('input[name=a]').focus();
 });
