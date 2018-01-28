@@ -9,15 +9,18 @@ function startDictation() {
 
     recognition.lang = "en-US";
     recognition.start();
-/*
-    recognition.onspeechstart = function(e) {
-      var cur_value = document.getElementById('textbox').value
-    };*/
+    /*
     var cur_value = "";
+    recognition.onspeechend = function(e) {
+      cur_value = document.getElementById('textbox').value + "**";
+    };
+    recognition.onspeechstart = function(e) {
+      document.getElementById('textbox').value = cur_value;
+    };
+    */
     recognition.onresult = function(e) {
       document.getElementById('textbox').value
-                               = cur_value + e.results[0][0].transcript;
-      cur_value = document.getElementById('textbox').value;
+                               = e.results[0][0].transcript;
       //recognition.stop();
     };
 
