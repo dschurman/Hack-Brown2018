@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-from flask import Flask, render_template
-=======
-#!flask/bin/python
-
 #import sys
 from summ_util import summarize_text, get_keywords
 from pdf_to_text import parse_my_pdf
