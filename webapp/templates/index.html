@@ -36,7 +36,7 @@
 			<!-- Tab content -->
 			<div id="plaintext-tab" class="tabcontent">
 			  	<textarea id="textbox" placeholder="Paste or speak"></textarea>
-					<img onclick="startDictation()" src="//i.imgur.com/cHidSVu.gif" />
+					<img onclick="startDictation(document.getElementById('textbox').value)" src="//i.imgur.com/cHidSVu.gif" />
 				<script src="{{url_for('static', filename='javascript/speechrec.js')}}"></script>
 				<br>
 				<button type="button" id="calculate">Generate Summary</button>

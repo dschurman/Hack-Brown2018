@@ -1,4 +1,4 @@
-function startDictation() {
+function startDictation(cur_value) {
 
   if (window.hasOwnProperty('webkitSpeechRecognition')) {
 
@@ -9,18 +9,10 @@ function startDictation() {
 
     recognition.lang = "en-US";
     recognition.start();
-    /*
-    var cur_value = "";
-    recognition.onspeechend = function(e) {
-      cur_value = document.getElementById('textbox').value + "**";
-    };
-    recognition.onspeechstart = function(e) {
-      document.getElementById('textbox').value = cur_value;
-    };
-    */
+
     recognition.onresult = function(e) {
       document.getElementById('textbox').value
-                               = e.results[0][0].transcript;
+                               = cur_value + " " + e.results[0][0].transcript;
       //recognition.stop();
     };
 

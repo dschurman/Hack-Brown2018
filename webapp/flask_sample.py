@@ -32,10 +32,11 @@ def pdf():
         b = request.args.get('b')
         c = request.args.get('c')
         summ = summarize_text(text, word_count=int(b))
+        summ = re.sub(r'[ÓÒÕ]', '', summ)
         keys = get_keywords(text, words=int(c))
         return jsonify(result=summ, keywords=keys)
     except:
-        text = "Invalid filepath boi."
+        text = "Invalid file."
         return jsonify(result=text)
 
 if __name__ == '__main__':
