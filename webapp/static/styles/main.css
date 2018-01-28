@@ -2,7 +2,8 @@
 .tab {
     overflow: hidden;
     border: 1px solid #ccc;
-    background-color: #f1f1f1;
+    background-color: #e6e6e6;
+    /*background-color: #f1f1f1;*/
 }
 
 /* Style the buttons that are used to open the tab content */
@@ -19,12 +20,12 @@
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-    background-color: #ddd;
+    background-color: #f1f1f1;
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
-    background-color: #ccc;
+    background-color: #80d9ff;
 }
 
 /* Style the tab content */
@@ -66,12 +67,12 @@ p {
 #title-text {
 	font-size: 30px;
 	margin-bottom: 20px;
-  text-align: center;
+  	text-align: center;
 }
 
 #description {
 	font-size:12px;
-  text-align: justify;
+  	text-align: justify;
 }
 
 input[type=text] {
@@ -88,13 +89,13 @@ body {
 #results-container {
 	margin-top: 20px;
 	margin-bottom: 20px;
-  text-align: justify;
+  	text-align: justify;
 }
 
 #results-text {
-  background-color: #d6f3ff;
-  border-radius: 5px;
-  padding: 10px;
+	background-color: #d6f3ff;
+	border-radius: 5px;
+	padding: 10px;
 }
 
 #result {
@@ -102,20 +103,20 @@ body {
 }
 
 .description {
-  color: #4dcbf9;
+	color: #4dcbf9;
 }
 
 hr {
-  background-color: #4dcbf9;
-  color: #4dcbf9;
-  border: 0 none;
-  height: 1px;
+	background-color: #4dcbf9;
+	color: #4dcbf9;
+	border: 0 none;
+	height: 1px;
 }
 
 a {
-  color: #adadad;
-  font-style: italic;
-  text-decoration: underline;
+	color: #adadad;
+	font-style: italic;
+	text-decoration: underline;
 }
 
 textarea {
@@ -132,4 +133,8 @@ textarea {
     margin-bottom:10px;
 }
 
-</style>
+#filepathbox, #pdf {
+	margin-top: 20px;
+	margin-bottom:10px;
+}
+

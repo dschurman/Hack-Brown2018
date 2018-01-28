@@ -42,7 +42,7 @@ def get_keywords(input_string, words):
         cleaned_words = [porter_stemmer.stem(word.lower()) for word in all_words if
                          word not in stopwords_list and len(word) > 1 and word.isalpha()]
         yes = " ".join(cleaned_words)
-        keys = keywords(yes, words=words)
+        keys = keywords(yes, words=words).replace("\n", ", ")
     except:
         keys = ""
     return keys
