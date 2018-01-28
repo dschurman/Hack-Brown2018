@@ -1,5 +1,8 @@
 from gensim.summarization import summarize
 from gensim.summarization import keywords
+import nltk
+from nltk.stem.porter import PorterStemmer
+porter_stemmer = PorterStemmer()
 
 # Heart of Darkness, Gutenberg
 my_string = """
@@ -16,6 +19,7 @@ In general terms, improvement owes less to some newfound wellspring of wealth th
 And still the fact that every major swath of the globe is expanding is a source of optimism. There is no guarantee that this expansion will prove more equitable. Yet if growth were to evolve, bolstering wages while adding to the security of middle-class lives, the beginning would probably feel something like now.
 """
 
+badline = "aa aaa aaaaaa"
 
 #clean up the string first!! make a function
 # remove non ascii? or specify encoding to prevent errors
@@ -23,21 +27,28 @@ And still the fact that every major swath of the globe is expanding is a source 
 
 # change ratio or word_count defaults depending on what works best
 def summarize_text(input_string, ratio=0.2, word_count=30):
-    summary = "";
-    summary = summarize(input_string, word_count = word_count)
-    if len(summary) == 0:
-        summary = summarize(input_string, ratio = ratio)
-    #print(summary)
+    try:
+        summary = summarize(input_string, word_count = word_count)
+        if len(summary) == 0:
+            summary = summarize(input_string, ratio = ratio)
+    except:
+        summary = input_string
     return summary
 
 def get_keywords(input_string, words=5):
-    #print("Keywords:")
-    #print(keywords(input_string, words=words))
-    #print(keywords(input_string, words=words))
-    return keywords(input_string, words=words)
+    try:
+        stopwords_list = nltk.corpus.stopwords.words('english')
+        all_words = input_string.split(" ")
+        cleaned_words = [porter_stemmer.stem(word.lower()) for word in all_words if
+                         word not in stopwords_list and len(word) > 1 and word.isalpha()]
+        yes = " ".join(cleaned_words)
+        keys = keywords(yes, words=words)
+    except:
+        keys = ""
+    return keys
 
-
-#print("************START************")
-#summarize_text(nytimes_economy)
-#get_keywords(nytimes_economy)
-#print("*************END*************")
+#
+# print("************START************")
+# print(summarize_text(badline))
+# print(get_keywords(badline))
+# print("*************END*************")
