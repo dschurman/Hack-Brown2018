@@ -15,7 +15,7 @@
 
 			<div id="title-text">Welcome!</div>
 
-			<div id="description"> Welcome to our text summarization tool! We use Gensim and NLTK to implement natural language processing and machine learning in an easy-to-use tool. Specify your preferred summary target length and keyword count (in words), or use our default settings!</div>
+			<div id="description"> Welcome to our text summarization tool! We use Gensim and NLTK to implement natural language processing and machine learning in an easy-to-use tool. Specify your preferred summary target length and keyword count (in words), or use our default settings! Paste text directly, use the microphone for speech-to-text, or select a PDF. Note: Keywords are stemmed. </div>
 
 		</div>
 
@@ -28,7 +28,7 @@
 		<div id="tabs-container">
 			<!-- Tab links -->
 			<div class="tab">
-			  <button class="tablinks" onclick="openTab(event, 'plaintext-tab')">Plain Text</button>
+			  <button class="tablinks" onclick="openTab(event, 'plaintext-tab')">Plain Text/Speech2Text</button>
 			  <button class="tablinks" onclick="openTab(event, 'pdf-tab')">PDF Select</button>
 			</div>
 
@@ -36,9 +36,10 @@
 			<!-- Tab content -->
 			<div id="plaintext-tab" class="tabcontent">
 			  	<textarea id="textbox" placeholder="Paste text here"></textarea>
-			  	<button type="button" id="calculate">Generate Summary</button>
-					<img onclick="startDictation()" src="//i.imgur.com/cHidSVu.gif" />
-					<script src="{{url_for('static', filename='javascript/speechrec.js')}}"></script>
+				<img onclick="startDictation()" src="//i.imgur.com/cHidSVu.gif" />
+				<script src="{{url_for('static', filename='javascript/speechrec.js')}}"></script> 
+				<br>
+				<button type="button" id="calculate">Generate Summary</button>
 			</div>
 
 			<div id="pdf-tab" class="tabcontent">
@@ -54,7 +55,6 @@
 
 		<script src="{{url_for('static', filename='javascript/main.js')}}"></script>
 		<div id="results-container">
-
 			<div id="title-text"> Results: </div>
 			<span id="result"><br>?</span>
 		</div>
