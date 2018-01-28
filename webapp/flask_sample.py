@@ -19,7 +19,7 @@ def worker():
     #a = parse_my_pdf('geo_pdf.pdf')
     summ = summarize_text(a, word_count=int(b))
     keys = get_keywords(a, words=int(c))
-    return jsonify(result=summ + '\n\nKeywords:\n' + keys)
+    return jsonify(result=summ, keywords=keys)
 
 @app.route('/pdf')
 def pdf():
@@ -33,7 +33,7 @@ def pdf():
         c = request.args.get('c')
         summ = summarize_text(text, word_count=int(b))
         keys = get_keywords(text, words=int(c))
-        return jsonify(result=summ + '\n\nKeywords:\n' + keys)
+        return jsonify(result=summ, keywords=keys)
     except:
         text = "Invalid filepath boi."
         return jsonify(result=text)
