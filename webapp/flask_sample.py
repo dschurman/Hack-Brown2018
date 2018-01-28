@@ -24,6 +24,7 @@ def pdf():
     import re
     p = request.args.get('p')
     p = re.sub(r'^.*\\', '', p);
+    print(p + "**")
     try:
         text = parse_my_pdf(p)
         summ = summarize_text(text)

@@ -22,13 +22,15 @@
 
 	<button type="button" id="calculate">Generate Summary</button>
 	<form>
-		<br>Or, enter a PDF filepath (no upload b/c I'm bad):<br>
+		<br>Or, choose a PDF file to summarize:<br>
   	<!--<input type="text" name="filepath" id="filepathbox"><br>-->
 		<input type="file" id="filepathbox"><br>
 	  <input type="submit" value="Submit" id="pdf">
 	</form>
 	<script src="{{url_for('static', filename='javascript/main.js')}}"></script>
-	<span id="result"><br>?</span>
+	<br><span id="result">?</span>
+	<!--<embed src="http://example.com/the.pdf" width="500" height="375" type='application/pdf'>-->
+	<iframe src="http://docs.google.com/gview?url=http://example.com/mypdf.pdf&embedded=true" style="width:718px; height:700px;" frameborder="0"></iframe>
 
 </body>
 </html>
