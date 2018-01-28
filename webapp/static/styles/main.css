@@ -36,12 +36,12 @@
 }
 
 #tabs-container {
-	
+
 }
 
 
 p {
-	text-align: center;
+	text-align: justify;
   	color: black;
 }
 
@@ -66,10 +66,12 @@ p {
 #title-text {
 	font-size: 30px;
 	margin-bottom: 20px;
+  text-align: center;
 }
 
 #description {
 	font-size:12px;
+  text-align: justify;
 }
 
 input[type=text] {
@@ -86,6 +88,7 @@ body {
 #results-container {
 	margin-top: 20px;
 	margin-bottom: 20px;
+  text-align: justify;
 }
 
 #result {
