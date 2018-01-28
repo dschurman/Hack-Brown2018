@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6ca7032e-3911-40e2-9db7-14bf62755216" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/flask_sample.py" afterPath="$PROJECT_DIR$/webapp/flask_sample.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/static/javascript/main.js" afterPath="$PROJECT_DIR$/webapp/static/javascript/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/static/styles/main.css" afterPath="$PROJECT_DIR$/webapp/static/styles/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/summ_util.py" afterPath="$PROJECT_DIR$/webapp/summ_util.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/templates/index.html" afterPath="$PROJECT_DIR$/webapp/templates/index.html" />
-    </list>
+    <list default="true" id="6ca7032e-3911-40e2-9db7-14bf62755216" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,11 +27,9 @@
       <file leaf-file-name="summ_util.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webapp/summ_util.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="44" lean-forward="true" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
-              <folding>
-                <element signature="e#0#42#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="45">
+              <caret line="3" column="6" lean-forward="true" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -401,11 +392,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/webapp/summ_util.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="44" lean-forward="true" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="45">
+          <caret line="3" column="6" lean-forward="true" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -10,30 +10,59 @@
 </head>
 <body>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-	<div id="heading-container">
+	<div id="content-container">
+		<div id="heading-container">
 
-		<div id="title-text">Welcome!</div>
+			<div id="title-text">Welcome!</div>
 
-		<div id="description"> Here is a description of our product. Here is a description of our product. Here is a description of our product. Here is a description of our product. Here is a description of our product. Here is a description of our product.  </div>
+			<div id="description"> Welcome to our text summarization tool! We use Gensim and NLTK to implement natural language processing and machine learning in an easy-to-use tool. Specify your preferred summary target length and keyword count (in words), or use our default settings!</div>
 
+		</div>
+
+		<div id="settings-container">
+			Summary target: <input type="text" id="summary-limit" value=50> 
+			Keyword count: <input type="text" id="keyword-count" value=6> 
+		</div>
+
+
+		<div id="tabs-container">
+			<!-- Tab links -->
+			<div class="tab">
+			  <button class="tablinks" onclick="openTab(event, 'plaintext-tab')">Plain Text</button>
+			  <button class="tablinks" onclick="openTab(event, 'pdf-tab')">PDF Select</button>
+			  <button class="tablinks" onclick="openTab(event, 'speech-tab')">Microphone</button>
+			</div>
+
+
+			<!-- Tab content -->
+			<div id="plaintext-tab" class="tabcontent">
+			  	<textarea id="textbox" placeholder="Paste text here"></textarea>
+			  	<button type="button" id="calculate">Generate Summary</button>
+			</div>
+
+			<div id="pdf-tab" class="tabcontent">
+				<form>
+					<br>Or, enter a PDF filepath (no upload b/c I'm bad):<br>
+			  		<!--<input type="text" name="filepath" id="filepathbox"><br>-->
+					<input type="file" id="filepathbox"><br>
+				    <input type="submit" value="Submit" id="pdf">
+				</form>
+			</div>
+
+			<div id="speech-tab" class="tabcontent">
+				<p> microphone things here </p>
+			</div>
+
+		</div>
+
+		
+		<script src="{{url_for('static', filename='javascript/main.js')}}"></script>
+		<div id="results-container">
+
+			<div id="title-text"> Results: </div>
+			<span id="result"><br>?</span>
+		</div>
 	</div>
-
-	<div id="settings-container">
-		Summary length (#words): <input type="text" id="summary-limit" value=30> <br>
-		Keyword count  (#words): <input type="text" id="keyword-count" value=6> <br>
-	</div>
-
-	<textarea id="textbox" placeholder="Paste text here"></textarea>
-
-	<button type="button" id="calculate">Generate Summary</button>
-	<form>
-		<br>Or, enter a PDF filepath (no upload b/c I'm bad):<br>
-  	<!--<input type="text" name="filepath" id="filepathbox"><br>-->
-		<input type="file" id="filepathbox"><br>
-	  <input type="submit" value="Submit" id="pdf">
-	</form>
-	<script src="{{url_for('static', filename='javascript/main.js')}}"></script>
-	<span id="result"><br>?</span>
 
 </body>
 </html>
